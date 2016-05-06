@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0720"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1AA5D8BE1CDC1B8A004D1CF9"
-               BuildableName = "libSTpopup.a"
-               BlueprintName = "STpopup"
+               BlueprintIdentifier = "76D822371C1DB5E400FCF988"
+               BuildableName = "STPopup.framework"
+               BlueprintName = "STPopup"
                ReferencedContainer = "container:STPopup.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1AA5D8BE1CDC1B8A004D1CF9"
-            BuildableName = "libSTpopup.a"
-            BlueprintName = "STpopup"
+            BlueprintIdentifier = "76D822371C1DB5E400FCF988"
+            BuildableName = "STPopup.framework"
+            BlueprintName = "STPopup"
             ReferencedContainer = "container:STPopup.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1AA5D8BE1CDC1B8A004D1CF9"
-            BuildableName = "libSTpopup.a"
-            BlueprintName = "STpopup"
+            BlueprintIdentifier = "76D822371C1DB5E400FCF988"
+            BuildableName = "STPopup.framework"
+            BlueprintName = "STPopup"
             ReferencedContainer = "container:STPopup.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

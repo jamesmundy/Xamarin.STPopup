@@ -6,21 +6,6 @@ using UIKit;
 
 namespace STPopup
 {
-	// @interface STPopup : NSObject
-	[BaseType (typeof(NSObject))]
-	interface STPopup
-	{
-	}
-
-	// @interface STPopupNavigationBar : UINavigationBar
-	[BaseType (typeof(UINavigationBar))]
-	interface STPopupNavigationBar
-	{
-		// @property (assign, nonatomic) BOOL draggable;
-		[Export ("draggable")]
-		bool Draggable { get; set; }
-	}
-
 	// @interface STPopupController : NSObject
 	[BaseType (typeof(NSObject))]
 	interface STPopupController
@@ -41,9 +26,10 @@ namespace STPopup
 		[Export ("navigationBarHidden")]
 		bool NavigationBarHidden { get; set; }
 
-		// @property (readonly, nonatomic, strong) STPopupNavigationBar * navigationBar;
+		// @property (readonly, nonatomic, strong) int * navigationBar;
 		[Export ("navigationBar", ArgumentSemantic.Strong)]
-		STPopupNavigationBar NavigationBar { get; }
+		//unsafe int* NavigationBar { get; }
+    NSObject NavigationBar { get; }
 
 		// @property (nonatomic, strong) UIView * backgroundView;
 		[Export ("backgroundView", ArgumentSemantic.Strong)]
@@ -111,6 +97,23 @@ namespace STPopup
 		void SetType (STPopupLeftBarItemType type, bool animated);
 	}
 
+	// @interface STPopupNavigationBar : UINavigationBar
+	[BaseType (typeof(UINavigationBar))]
+	interface STPopupNavigationBar
+	{
+		// @property (assign, nonatomic) BOOL draggable;
+		[Export ("draggable")]
+		bool Draggable { get; set; }
+	}
+
+	[Static]
+	partial interface Constants
+	{
+		// extern NSString *const STPopupFirstResponderDidChangeNotification;
+		[Field ("STPopupFirstResponderDidChangeNotification", "__Internal")]
+		NSString STPopupFirstResponderDidChangeNotification { get; }
+	}
+
 	// @interface STPopup (UIResponder)
 	[Category]
 	[BaseType (typeof(UIResponder))]
@@ -120,22 +123,19 @@ namespace STPopup
 
 	// @interface STPopup (UIViewController)
 	[Category]
-  [BaseType (typeof(UIViewController))]
+	[BaseType (typeof(UIViewController))]
 	interface UIViewController_STPopup
 	{
 		// @property (assign, nonatomic) CGSize contentSizeInPopup;
-    [Field ("contentSizeInPopup")]
-		//[Export ("contentSizeInPopup", ArgumentSemantic.Assign)]
+		[Static, Export ("contentSizeInPopup", ArgumentSemantic.Assign)]
 		CGSize ContentSizeInPopup { get; set; }
 
 		// @property (assign, nonatomic) CGSize landscapeContentSizeInPopup;
-    [Field ("landscapeContentSizeInPopup")]
-		//[Export ("landscapeContentSizeInPopup", ArgumentSemantic.Assign)]
+		[Static, Export ("landscapeContentSizeInPopup", ArgumentSemantic.Assign)]
 		CGSize LandscapeContentSizeInPopup { get; set; }
 
-		 //@property (readonly, nonatomic, weak) STPopupController * _Nullable popupController;
-		//[NullAllowed, Export ("popupController", ArgumentSemantic.Weak)]
-    [Field ("popupController", "__Internal")]
+		// @property (readonly, nonatomic, weak) STPopupController * _Nullable popupController;
+		[Static, NullAllowed, Export ("popupController", ArgumentSemantic.Weak)]
 		STPopupController PopupController { get; }
 	}
 }
