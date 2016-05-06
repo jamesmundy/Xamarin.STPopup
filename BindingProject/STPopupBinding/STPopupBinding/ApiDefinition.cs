@@ -6,6 +6,15 @@ using UIKit;
 
 namespace STPopup
 {
+	// @interface STPopupNavigationBar : UINavigationBar
+	[BaseType (typeof(UINavigationBar))]
+	interface STPopupNavigationBar
+	{
+		// @property (assign, nonatomic) BOOL draggable;
+		[Export ("draggable")]
+		bool Draggable { get; set; }
+	}
+
 	// @interface STPopupController : NSObject
 	[BaseType (typeof(NSObject))]
 	interface STPopupController
@@ -26,10 +35,9 @@ namespace STPopup
 		[Export ("navigationBarHidden")]
 		bool NavigationBarHidden { get; set; }
 
-		// @property (readonly, nonatomic, strong) int * navigationBar;
+		// @property (readonly, nonatomic, strong) STPopupNavigationBar * navigationBar;
 		[Export ("navigationBar", ArgumentSemantic.Strong)]
-		//unsafe int* NavigationBar { get; }
-    NSObject NavigationBar { get; }
+		STPopupNavigationBar NavigationBar { get; }
 
 		// @property (nonatomic, strong) UIView * backgroundView;
 		[Export ("backgroundView", ArgumentSemantic.Strong)]
@@ -80,6 +88,32 @@ namespace STPopup
 		void SetNavigationBarHidden (bool navigationBarHidden, bool animated);
 	}
 
+	// @interface STPopup (UIViewController)
+	[Category]
+	[BaseType (typeof(UIViewController))]
+	partial interface UIViewController_STPopup
+	{
+		// @property (assign, nonatomic) CGSize contentSizeInPopup;
+		[Export ("contentSizeInPopup", ArgumentSemantic.Assign)]
+    //[Field ("contentSizeInPopup")]
+    CGSize ContentSizeInPopup();
+
+    [Export ("contentSizeInPopup", ArgumentSemantic.Assign)]
+    void ContentSizeInPopup(CGSize size);
+
+		// @property (assign, nonatomic) CGSize landscapeContentSizeInPopup;
+		[Export ("landscapeContentSizeInPopup", ArgumentSemantic.Assign)]
+    void LandscapeContentSizeInPopup();
+
+    [Export ("landscapeContentSizeInPopup", ArgumentSemantic.Assign)]
+    CGSize LandscapeContentSizeInPopup(CGSize size);
+
+//		// @property (readonly, nonatomic, weak) STPopupController * _Nullable popupController;
+//		[Static, NullAllowed, Export ("popupController", ArgumentSemantic.Weak)]
+//    //[Field("PopupController", "__Internal")]
+//		STPopupController PopupController { get; }
+	}
+
 	// @interface STPopupLeftBarItem : UIBarButtonItem
 	[BaseType (typeof(UIBarButtonItem))]
 	interface STPopupLeftBarItem
@@ -97,15 +131,6 @@ namespace STPopup
 		void SetType (STPopupLeftBarItemType type, bool animated);
 	}
 
-	// @interface STPopupNavigationBar : UINavigationBar
-	[BaseType (typeof(UINavigationBar))]
-	interface STPopupNavigationBar
-	{
-		// @property (assign, nonatomic) BOOL draggable;
-		[Export ("draggable")]
-		bool Draggable { get; set; }
-	}
-
 	[Static]
 	partial interface Constants
 	{
@@ -119,23 +144,5 @@ namespace STPopup
 	[BaseType (typeof(UIResponder))]
 	interface UIResponder_STPopup
 	{
-	}
-
-	// @interface STPopup (UIViewController)
-	[Category]
-	[BaseType (typeof(UIViewController))]
-	interface UIViewController_STPopup
-	{
-		// @property (assign, nonatomic) CGSize contentSizeInPopup;
-		[Static, Export ("contentSizeInPopup", ArgumentSemantic.Assign)]
-		CGSize ContentSizeInPopup { get; set; }
-
-		// @property (assign, nonatomic) CGSize landscapeContentSizeInPopup;
-		[Static, Export ("landscapeContentSizeInPopup", ArgumentSemantic.Assign)]
-		CGSize LandscapeContentSizeInPopup { get; set; }
-
-		// @property (readonly, nonatomic, weak) STPopupController * _Nullable popupController;
-		[Static, NullAllowed, Export ("popupController", ArgumentSemantic.Weak)]
-		STPopupController PopupController { get; }
 	}
 }

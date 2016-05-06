@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A4D69351CDD555F00B50B10 /* STPopup.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A4D69341CDD555F00B50B10 /* STPopup.h */; };
+		1A4D69371CDD555F00B50B10 /* STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D69361CDD555F00B50B10 /* STPopup.m */; };
+		1A4D69471CDD55A000B50B10 /* STPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D693E1CDD55A000B50B10 /* STPopupController.m */; };
+		1A4D69481CDD55A000B50B10 /* STPopupLeftBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D69401CDD55A000B50B10 /* STPopupLeftBarItem.m */; };
+		1A4D69491CDD55A000B50B10 /* STPopupNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D69421CDD55A000B50B10 /* STPopupNavigationBar.m */; };
+		1A4D694A1CDD55A000B50B10 /* UIResponder+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D69441CDD55A000B50B10 /* UIResponder+STPopup.m */; };
+		1A4D694B1CDD55A000B50B10 /* UIViewController+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D69461CDD55A000B50B10 /* UIViewController+STPopup.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A4D692F1CDD555F00B50B10 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				1A4D69351CDD555F00B50B10 /* STPopup.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1A4D69311CDD555F00B50B10 /* libSTPopup.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSTPopup.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A4D69341CDD555F00B50B10 /* STPopup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STPopup.h; sourceTree = "<group>"; };
+		1A4D69361CDD555F00B50B10 /* STPopup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STPopup.m; sourceTree = "<group>"; };
+		1A4D693D1CDD55A000B50B10 /* STPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupController.h; sourceTree = "<group>"; };
+		1A4D693E1CDD55A000B50B10 /* STPopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupController.m; sourceTree = "<group>"; };
+		1A4D693F1CDD55A000B50B10 /* STPopupLeftBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupLeftBarItem.h; sourceTree = "<group>"; };
+		1A4D69401CDD55A000B50B10 /* STPopupLeftBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupLeftBarItem.m; sourceTree = "<group>"; };
+		1A4D69411CDD55A000B50B10 /* STPopupNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupNavigationBar.h; sourceTree = "<group>"; };
+		1A4D69421CDD55A000B50B10 /* STPopupNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupNavigationBar.m; sourceTree = "<group>"; };
+		1A4D69431CDD55A000B50B10 /* UIResponder+STPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+STPopup.h"; sourceTree = "<group>"; };
+		1A4D69441CDD55A000B50B10 /* UIResponder+STPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+STPopup.m"; sourceTree = "<group>"; };
+		1A4D69451CDD55A000B50B10 /* UIViewController+STPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+STPopup.h"; sourceTree = "<group>"; };
+		1A4D69461CDD55A000B50B10 /* UIViewController+STPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+STPopup.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A4D692E1CDD555F00B50B10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A4D69281CDD555F00B50B10 = {
+			isa = PBXGroup;
+			children = (
+				1A4D69331CDD555F00B50B10 /* STPopup */,
+				1A4D69321CDD555F00B50B10 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A4D69321CDD555F00B50B10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A4D69311CDD555F00B50B10 /* libSTPopup.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A4D69331CDD555F00B50B10 /* STPopup */ = {
+			isa = PBXGroup;
+			children = (
+				1A4D693D1CDD55A000B50B10 /* STPopupController.h */,
+				1A4D693E1CDD55A000B50B10 /* STPopupController.m */,
+				1A4D693F1CDD55A000B50B10 /* STPopupLeftBarItem.h */,
+				1A4D69401CDD55A000B50B10 /* STPopupLeftBarItem.m */,
+				1A4D69411CDD55A000B50B10 /* STPopupNavigationBar.h */,
+				1A4D69421CDD55A000B50B10 /* STPopupNavigationBar.m */,
+				1A4D69431CDD55A000B50B10 /* UIResponder+STPopup.h */,
+				1A4D69441CDD55A000B50B10 /* UIResponder+STPopup.m */,
+				1A4D69451CDD55A000B50B10 /* UIViewController+STPopup.h */,
+				1A4D69461CDD55A000B50B10 /* UIViewController+STPopup.m */,
+				1A4D69341CDD555F00B50B10 /* STPopup.h */,
+				1A4D69361CDD555F00B50B10 /* STPopup.m */,
+			);
+			path = STPopup;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A4D69301CDD555F00B50B10 /* STPopup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A4D693A1CDD555F00B50B10 /* Build configuration list for PBXNativeTarget "STPopup" */;
+			buildPhases = (
+				1A4D692D1CDD555F00B50B10 /* Sources */,
+				1A4D692E1CDD555F00B50B10 /* Frameworks */,
+				1A4D692F1CDD555F00B50B10 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STPopup;
+			productName = STPopup;
+			productReference = 1A4D69311CDD555F00B50B10 /* libSTPopup.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A4D69291CDD555F00B50B10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Foundbite;
+				TargetAttributes = {
+					1A4D69301CDD555F00B50B10 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 1A4D692C1CDD555F00B50B10 /* Build configuration list for PBXProject "STPopup" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1A4D69281CDD555F00B50B10;
+			productRefGroup = 1A4D69321CDD555F00B50B10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A4D69301CDD555F00B50B10 /* STPopup */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A4D692D1CDD555F00B50B10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A4D69371CDD555F00B50B10 /* STPopup.m in Sources */,
+				1A4D69491CDD55A000B50B10 /* STPopupNavigationBar.m in Sources */,
+				1A4D694B1CDD55A000B50B10 /* UIViewController+STPopup.m in Sources */,
+				1A4D69471CDD55A000B50B10 /* STPopupController.m in Sources */,
+				1A4D694A1CDD55A000B50B10 /* UIResponder+STPopup.m in Sources */,
+				1A4D69481CDD55A000B50B10 /* STPopupLeftBarItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1A4D69381CDD555F00B50B10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1A4D69391CDD555F00B50B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A4D693B1CDD555F00B50B10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1A4D693C1CDD555F00B50B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A4D692C1CDD555F00B50B10 /* Build configuration list for PBXProject "STPopup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A4D69381CDD555F00B50B10 /* Debug */,
+				1A4D69391CDD555F00B50B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A4D693A1CDD555F00B50B10 /* Build configuration list for PBXNativeTarget "STPopup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A4D693B1CDD555F00B50B10 /* Debug */,
+				1A4D693C1CDD555F00B50B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A4D69291CDD555F00B50B10 /* Project object */;
+}
