@@ -89,29 +89,24 @@ namespace STPopup
 	}
 
 	// @interface STPopup (UIViewController)
-	[Category]
+  [Category]
 	[BaseType (typeof(UIViewController))]
-	partial interface UIViewController_STPopup
+	interface UIViewController_STPopup
 	{
-		// @property (assign, nonatomic) CGSize contentSizeInPopup;
-		[Export ("contentSizeInPopup", ArgumentSemantic.Assign)]
-    //[Field ("contentSizeInPopup")]
-    CGSize ContentSizeInPopup();
+		[Export ("contentSizeInPopup")]
+    CGSize GetContentSizeInPopup();
 
-    [Export ("contentSizeInPopup", ArgumentSemantic.Assign)]
-    void ContentSizeInPopup(CGSize size);
+    [Export ("setContentSizeInPopup:")]
+    void SetContentSizeInPopup(CGSize contentSizeInPopup);
 
-		// @property (assign, nonatomic) CGSize landscapeContentSizeInPopup;
-		[Export ("landscapeContentSizeInPopup", ArgumentSemantic.Assign)]
-    void LandscapeContentSizeInPopup();
+    [Export ("landscapeContentSizeInPopup")]
+    CGSize GetLandscapeContentSizeInPopup();
 
-    [Export ("landscapeContentSizeInPopup", ArgumentSemantic.Assign)]
-    CGSize LandscapeContentSizeInPopup(CGSize size);
+    [Export ("setLandscapeContentSizeInPopup:")]
+    void SetLandscapeContentSizeInPopup(CGSize landscapeContentSizeInPopup);
 
-//		// @property (readonly, nonatomic, weak) STPopupController * _Nullable popupController;
-//		[Static, NullAllowed, Export ("popupController", ArgumentSemantic.Weak)]
-//    //[Field("PopupController", "__Internal")]
-//		STPopupController PopupController { get; }
+    [Export ("getPopupController")]
+    STPopupController GetPopupController();
 	}
 
 	// @interface STPopupLeftBarItem : UIBarButtonItem
