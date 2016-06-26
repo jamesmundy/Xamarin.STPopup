@@ -246,6 +246,7 @@
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos9.0;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -255,6 +256,7 @@
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos9.0;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -278,6 +280,7 @@
 				1A4D693C1CDD555F00B50B10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
